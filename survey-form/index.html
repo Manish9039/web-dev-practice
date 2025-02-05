@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Anime Survey: Share Your Insights & Experiences</h1>
+      <p id="description">
+        Welcome Anime Lovers!
+        <br /><br>
+        Thank you for participating and sharing your anime experience!
+      </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label for="name" id="name-label"
+          >Name
+          <input type="text" id="name" required placeholder="Enter your name"
+        /></label>
+        <label for="email" id="email-label"
+          >Email
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="Enter your email"
+        /></label>
+        <label for="number" id="number-label"
+          >Age
+          <input
+            type="number"
+            id="number"
+            required
+            min="7"
+            max="77"
+            placeholder="Enter your age"
+        /></label>
+
+        <label for="dropdown" id="dropdown-label"
+          >How were you introduced to anime?
+          <select id="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="1">Through Friend or Family Member</option>
+            <option value="2">
+              Through Online Recommendations or Social Media
+            </option>
+            <option value="3">Through TV or Streaming Service</option>
+            <option value="4">Through other means</option>
+          </select>
+        </label>
+
+        <p id="radio-label">How do you prefer to watch anime series?</p>
+        <label for="watch1" id="watch1-label"
+          ><input
+            type="radio"
+            name="watch-preference"
+            id="watch1"
+            value="1"
+          />Weekly, as each episode releases</label
+        >
+        <label for="watch2" id="watch2-label" value="2"
+          ><input
+            type="radio"
+            name="watch-preference"
+            id="watch2"
+          />Binge-watching after a season completes</label
+        >
+        <label for="watch3" id="watch3-label" value="3"
+          ><input type="radio" name="watch-preference" id="watch3" />Both,
+          depending on the series</label
+        >
+        <label for="watch4" id="watch4-label" value="4"
+          ><input type="radio" name="watch-preference" id="watch4" />I don't
+          have a preference</label
+        >
+
+        <p id="checkbox-label">How do you usually find new anime to watch?</p>
+        <label for="find1" id="find1-label"
+          ><input type="checkbox" value="1" id="find1" />Recommendations from
+          friends or family</label
+        >
+        <label for="find2" id="find2-label"
+          ><input type="checkbox" value="2" id="find2" />Online streaming
+          platforms</label
+        >
+        <label for="find3" id="find3-label"
+          ><input type="checkbox" value="3" id="find3" />Social media</label
+        >
+        <label for="find4" id="find4-label"
+          ><input type="checkbox" value="4" id="find4" />Anime Forums or
+          Communities</label
+        >
+
+        <p id="textarea-label">
+          What are your favorite anime series of all time?
+        </p>
+        <textarea
+          id="favorite-series"
+          placeholder="Enter your favorite anime series"
+          rows="5"
+          cols="40"
+        ></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

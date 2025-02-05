@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>SQL Technical Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>SQL Documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Introduction_to_SQL">
+            Introduction to SQL
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#What_is_a_Database?">
+            What is a Database?
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#What_is_a_DBMS?">What is a DBMS?</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#What_is_an_RDBMS?">What is an RDBMS?</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#What_is_SQL?">What is SQL?</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#SQL_vs_MySQL">SQL vs MySQL</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#SQL_Data_Types">SQL Data Types</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#String_Data_Types">String Data Types</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Numeric_Data_Types">Numeric Data Types</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#SQL_Commands_and_Categories">
+            SQL Commands and Categories
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Data_Query_Language_(DQL)">
+            Data Query Language (DQL)
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Data_Definition_Language_(DDL)"
+            >Data Definition Language (DDL)
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Data_Manipulation_Language_(DML)"
+            >Data Manipulation Language (DML)</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Data_Control_Language_(DCL)">
+            Data Control Language (DCL)
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Transaction_Control_Language_(TCL)">
+            Transaction Control Language (TCL)
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#SQL_Joins">SQL Joins</a>
+        </li>
+        <li>
+          <a class="nav-link" id="set" href="#Set_Operations">Set Operations</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_to_SQL">
+        <header>Introduction to SQL</header>
+      </section>
+
+      <section class="main-section" id="What_is_a_Database?">
+        <header>What is a Database?</header>
+        <p>
+          A database is a structured collection of data that allows users to
+          store, retrieve, and manage information efficiently. It ensures data
+          consistency and accessibility by organizing information
+          systematically.
+        </p>
+      </section>
+
+      <section class="main-section" id="What_is_a_DBMS?">
+        <header>What is a DBMS?</header>
+        <p>
+          A Database Management System (DBMS) is software that helps in
+          creating, managing, and manipulating databases. It allows users to
+          perform operations such as inserting, updating, and deleting data.
+          Examples include Microsoft Access, SQLite, and MongoDB.
+        </p>
+      </section>
+
+      <section class="main-section" id="What_is_an_RDBMS?">
+        <header>What is an RDBMS?</header>
+        <p>
+          A Relational Database Management System (RDBMS) is a type of DBMS that
+          stores data in a tabular format with rows and columns. It enforces
+          relationships between tables using keys (Primary Key, Foreign Key).
+          Examples include MySQL, PostgreSQL, Oracle, and Microsoft SQL Server.
+        </p>
+      </section>
+
+      <section class="main-section" id="What_is_SQL?">
+        <header>What is SQL?</header>
+        <p>
+          SQL (Structured Query Language) is a standard programming language
+          used to interact with relational databases. It allows users to perform
+          CRUD (Create, Read, Update, Delete) operations on databases.
+        </p>
+      </section>
+
+      <section class="main-section" id="SQL_vs_MySQL">
+        <header>SQL vs MySQL</header>
+        <ul>
+          <li>
+            SQL (Structured Query Language) is a standard language for managing
+            and querying databases, while MySQL is a relational database
+            management system (RDBMS) that uses SQL.
+          </li>
+          <li>
+            SQL is a language, whereas MySQL is software that implements SQL for
+            database management.
+          </li>
+          <li>
+            SQL is used in various database systems like MySQL, PostgreSQL, and
+            SQL Server, but MySQL is a specific database product
+          </li>
+          <li>
+            SQL defines how queries and commands work, while MySQL provides a
+            platform to store, retrieve, and manipulate data using SQL.
+          </li>
+          <li>
+            SQL is independent of any database, whereas MySQL is a database
+            system that adheres to SQL standards.
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="SQL_Data_Types">
+        <header>SQL Data Types</header>
+        <p>
+          SQL data types define the kind of data that can be stored in a column.
+          Some commonly used SQL data types include:
+        </p>
+      </section>
+
+      <section class="main-section" id="String_Data_Types">
+        <header>String Data Types</header>
+        <table>
+          <thead>
+            <tr>
+              <th>Data Type</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CHAR(n)</td>
+              <td>
+                Fixed-length character string with a maximum length of n
+                characters.
+              </td>
+              <td>CHAR(10)</td>
+            </tr>
+            <tr>
+              <td>VARCHAR(n)</td>
+              <td>
+                Variable-length character string with a maximum length of n
+                characters.
+              </td>
+              <td>VARCHAR(255)</td>
+            </tr>
+            <tr>
+              <td>TEXT</td>
+              <td>
+                Variable-length character string with a maximum length of 65,535
+                characters.
+              </td>
+              <td>TEXT</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="main-section" id="Numeric_Data_Types">
+        <header>Numeric Data Types</header>
+        <table>
+          <thead>
+            <tr>
+              <th>Data Type</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>INT</td>
+              <td>Integer value with a range of -2147483648 to 2147483647.</td>
+              <td>INT</td>
+            </tr>
+            <tr>
+              <td>BIGINT</td>
+              <td>Large integer values</td>
+              <td>BIGINT</td>
+            </tr>
+            <tr>
+              <td>DECIMAL(p, s)</td>
+              <td>
+                Fixed-point number with p total digits and s decimal places.
+              </td>
+              <td>DECIMAL(5, 2)</td>
+            </tr>
+            <tr>
+              <td>FLOAT</td>
+              <td>Floating-point number with single precision.</td>
+              <td>FLOAT</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="main-section" id="SQL_Commands_and_Categories">
+        <header>SQL Commands and Categories</header>
+        <p>
+          SQL commands are categorized into different groups based on their
+          purpose.
+        </p>
+      </section>
+
+      <section class="main-section" id="Data_Query_Language_(DQL)">
+        <header>Data Query Language (DQL)</header>
+        <p>
+          DQL consists of the SELECT statement, which retrieves data from a
+          database.
+        </p>
+        <h1 id="select">SELECT Statement</h1>
+        <p>Retrieves data from one or more tables.</p>
+        <pre><code>SELECT column1, column2 FROM table_name;</code></pre>
+        <h1 id="where">WHERE Clause</h1>
+        <p>Filters records based on a condition.</p>
+        <pre><code>SELECT * FROM Customers WHERE Country='India';</code></pre>
+        <h1 id="order-by">ORDER BY Clause</h1>
+        <p>Sorts data in ascending or descending order.</p>
+        <pre><code>SELECT * FROM Employees ORDER BY Salary DESC;</code></pre>
+        <h1 id="group-by-and-having-by">GROUP BY & HAVING Clause</h1>
+        <p>Groups data and filters aggregate results.</p>
+        <pre><code>SELECT Department, AVG(Salary) FROM Employees GROUP BY Department HAVING AVG(Salary) > 50000;</code>
+        </pre>
+      </section>
+
+      <section class="main-section" id="Data_Definition_Language_(DDL)">
+        <header>Data Definition Language (DDL)</header>
+        <p>DDL is used to define and modify database structures.</p>
+        <h1 id="create">CREATE TABLE</h1>
+        <p>Creates a new table in the database.</p>
+        <pre><code>TABLE Employees (ID INT PRIMARY KEY, Name VARCHAR(50), Salary DECIMAL(10,2));</code></pre>
+        <h1 id="alter">ALTER TABLE</h1>
+        <p>Modifies an existing table.</p>
+        <pre><code>TABLE Employees ADD COLUMN Email VARCHAR(100);</code></pre>
+        <h1 id="drop">DROP TABLE</h1>
+        <p>Deletes a table along with its data.</p>
+        <pre><code>DROP TABLE Employees;</code></pre>
+        <h1 id="trucate">TRUNCATE TABLE</h1>
+        <p>Removes all data from a table but keeps its structure.</p>
+        <pre><code>TRUNCATE TABLE Employees;</code></pre>
+      </section>
+
+      <section class="main-section" id="Data_Manipulation_Language_(DML)">
+        <header>Data Manipulation Language (DML)</header>
+        <p>DML is used to insert, update, and delete data in tables.</p>
+        <h1 id="insert">INSERT INTO</h1>
+        <p>Adds new records to a table.</p>
+        <pre><code>INSERT INTO Employees (Name, Salary) VALUES ('John Doe', 50000);</code></pre>
+        <h1 id="update">UPDATE</h1>
+        <p>Modifies existing records.</p>
+        <pre><code>UPDATE Employees SET Salary = 60000 WHERE Name = 'John Doe';</code></pre>
+        <h1 id="delete">DELETE</h1>
+        <p>Removes records from a table.</p>
+        <pre><code>DELETE FROM Employees WHERE Name = 'John Doe';</code></pre>
+      </section>
+
+      <section class="main-section" id="Data_Control_Language_(DCL)">
+        <header>Data Control Language (DCL)</header>
+        <p>DCL is used to control user access to databases.</p>
+        <h1 id="grant">GRANT</h1>
+        <p>Provides permissions to a user.</p>
+        <pre><code>GRANT SELECT ON Employees TO User1;</code></pre>
+        <h1 id="revoke">REVOKE</h1>
+        <p>Removes permissions from a user.</p>
+        <pre><code>REVOKE SELECT ON Employees FROM User1;</code></pre>
+      </section>
+
+      <section class="main-section" id="Transaction_Control_Language_(TCL)">
+        <header>Transaction Control Language (TCL)</header>
+        <p>TCL manages database transactions.</p>
+        <h1 id="commit">COMMIT</h1>
+        <p>Saves all changes permanently.</p>
+        <pre><code>COMMIT;</code></pre>
+        <h1 id="rollback">ROLLBACK</h1>
+        <p>Undoes changes made during a transaction.</p>
+        <pre><code>ROLLBACK;</code></pre>
+        <h1 id="savepoint">SAVEPOINT</h1>
+        <p>Creates a checkpoint within a transaction.</p>
+        <pre><code>SAVEPOINT my_savepoint;</code></pre>
+      </section>
+
+      <section class="main-section" id="SQL_Joins">
+        <header>SQL Joins</header>
+        <p>SQL Joins combine data from multiple tables.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Join Type</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>INNER JOIN</td>
+              <td>Returns only matching rows from both tables.</td>
+            </tr>
+            <tr>
+              <td>LEFT JOIN</td>
+              <td>
+                Returns all rows from the left table and matching rows from the
+                right table.
+              </td>
+            </tr>
+            <tr>
+              <td>RIGHT JOIN</td>
+              <td>
+                Returns all rows from the right table and matching rows from the
+                left table.
+              </td>
+            </tr>
+            <tr>
+              <td>FULL JOIN</td>
+              <td>
+                Returns all rows from both tables, with NULLs where there is no
+                match.
+              </td>
+            </tr>
+            <tr>
+              <td>CROSS JOIN</td>
+              <td>Returns a Cartesian product of both tables.</td>
+            </tr>
+            <tr>
+              <td>SELF JOIN</td>
+              <td>Joins a table with itself.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="main-section" id="Set_Operations">
+        <header>Set Operations</header>
+        <p>SQL set operations combine query results.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Operation</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>UNION</td>
+              <td>Combines results and removes duplicates.</td>
+            </tr>
+            <tr>
+              <td>UNION ALL</td>
+              <td>Combines results without removing duplicates.</td>
+            </tr>
+            <tr>
+              <td>INTERSECT</td>
+              <td>Returns only common records.</td>
+            </tr>
+            <tr>
+              <td>EXCEPT (or MINUS)</td>
+              <td>Returns records in one query but not the other.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

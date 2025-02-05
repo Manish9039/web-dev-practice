@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%; 
+    font-family: 'CustomFont', sans-serif;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/BruceForeverRegular-X3jd2.ttf') format('truetype'); 
+}
+
+body {
+    background-color: #CB9DF0;
+}
+
+#title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#description {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+#main {
+    background-color: #F0C1E1;
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px;
+    width: 98vw;
+    border-radius: 10px;
+}
+
+#img-div {
+    background-color: #CB9DF0; 
+    text-align: center; 
+    margin: 0 auto;
+    width: 96vw;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+#image {
+    object-fit: cover;
+    display: block;
+    width: 65vw;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 2    0px;
+}
+
+#img-caption {
+    text-align: center;
+    font-size: 20px;
+    margin: -10px 0;
+    padding: 0 150px;
+}
+
+#tribute-info {
+    text-align: center;
+    font-size: 20px;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+#tribute-info h2 {
+    margin: 30px 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: #7c30ba;
+}
+
+.wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px; 
+}

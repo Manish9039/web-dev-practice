@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url('1277702.jpg');
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover; 
+    background-position: center;    
+}
+#title {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+#description {
+    text-align: center;
+    padding: 20px;
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+#survey-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    opacity: 0.6;
+}
+
+#name, #email, #number, #dropdown, #favorite-series {
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    border: 3px solid #2E073F;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+}
+
+#name-label, #email-label, #number-label, #dropdown-label, #radio-label, #watch1-label, #watch2-label, #watch3-label, #watch4-label, #find1-label, #find2-label, #find3-label, #find4-label {
+    display: block;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+#favorite-series {
+    height: 120px;
+}
+
+#watch1, #watch2, #watch3, #watch4, #find1, #find2, #find3, #find4 {
+    margin: 5px 5px;
+    font-size: 20px;
+}
+
+#checkbox-label,  #textarea-label {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#submit {
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    background-color: #2E073F;
+    color: white;
+    border: none;
+}
+
+main {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
